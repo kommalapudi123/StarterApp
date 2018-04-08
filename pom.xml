@@ -38,18 +38,22 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-<!-- 
 	<distributionManagement>
-		<snapshotRepository>
-			<name></name>
-			<url></url>
-		</snapshotRepository>
 		<repository>
-			<name></name>
-			<url></url>
+			<uniqueVersion>false</uniqueVersion>
+			<id>corp1</id>
+			<name>Corporate Repository</name>
+			<url>http://localhost:8081/repository/release/</url>
+			<layout>default</layout>
 		</repository>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>snapshot</id>
+			<name>Propellors Snapshots</name>
+			<url>http://localhost:8081/repository/snapshot/</url>
+			<layout>legacy</layout>
+		</snapshotRepository>
 	</distributionManagement>
- -->
 
 	<build>
 		<plugins>
